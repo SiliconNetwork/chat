@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch --mode development",
+    "build": "webpack -p",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +15,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "html": "^1.0.0",
-    "server": "^1.0.27",
     "socket.io": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SiliconNetwork/chat/"
   }
 }
